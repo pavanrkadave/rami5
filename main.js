@@ -175,6 +175,29 @@ const dictionary = {
 
 let currentLang = 'de';
 const langToggleBtn = document.getElementById('langToggle');
+const langDropdown = document.querySelector('.lang-dropdown');
+const currentLangIcon = document.getElementById('currentLangIcon');
+const currentLangText = document.getElementById('currentLangText');
+const langOptions = document.querySelectorAll('.lang-option');
+
+langToggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown.classList.toggle('open');
+});
+
+window.addEventListener('click', () => {
+    langDropdown.classList.remove('open');
+});
+
+const updateLanguageDropdown = (lang) => {
+    currentLangIcon.textContent = lang === 'de' ? '🇩🇪' : '🇬🇧';
+    currentLangText.textContent = lang === 'de' ? 'DE' : 'EN';
+    
+    langOptions.forEach(opt => {
+        if(opt.getAttribute('data-lang') === lang) opt.classList.add('active');
+        else opt.classList.remove('active');
+    });
+};
 
 const updateLanguage = (lang) => {
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -192,12 +215,16 @@ const updateLanguage = (lang) => {
     });
     document.documentElement.lang = lang;
     currentLang = lang;
-    langToggleBtn.innerHTML = lang === 'de' ? '<span style="font-size:1.1rem; line-height:1;">🇬🇧</span> EN' : '<span style="font-size:1.1rem; line-height:1;">🇩🇪</span> DE';
+    updateLanguageDropdown(lang);
 };
 
-langToggleBtn.addEventListener('click', () => {
-    const newLang = currentLang === 'de' ? 'en' : 'de';
-    updateLanguage(newLang);
+langOptions.forEach(opt => {
+    opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const selectedLang = opt.getAttribute('data-lang');
+        updateLanguage(selectedLang);
+        langDropdown.classList.remove('open');
+    });
 });
 
 // --- Tab Interactions ---

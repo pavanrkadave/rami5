@@ -30,7 +30,17 @@
           <a href="#contact" data-i18n="nav_contact">Kontakt</a>
         </div>
         <div class="controls">
-          <button id="langToggle" class="lang-btn" aria-label="Toggle Language"><span style="font-size:1.1rem; line-height:1;">🇬🇧</span> EN</button>
+          <div class="lang-dropdown">
+            <button id="langToggle" class="lang-btn" aria-expanded="false" aria-label="Select Language">
+              <span id="currentLangIcon" style="font-size:1.1rem; line-height:1;">🇩🇪</span>
+              <span id="currentLangText">DE</span>
+              <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+            </button>
+            <div class="lang-menu" id="langMenu">
+              <button class="lang-option active" data-lang="de"><span style="font-size:1.1rem; line-height:1;">🇩🇪</span> Deutsch</button>
+              <button class="lang-option" data-lang="en"><span style="font-size:1.1rem; line-height:1;">🇬🇧</span> English</button>
+            </div>
+          </div>
           <a href="tel:095118329337" class="btn btn-outline btn-sm nav-call-btn" title="Anrufen"><i data-lucide="phone"></i><span class="nav-call-text" data-i18n="nav_call">Anrufen</span></a>
           <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Bestellen</a>
         </div>
