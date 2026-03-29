@@ -2,29 +2,21 @@
 
 lucide.createIcons();
 
-const themeToggleBtn = document.getElementById('themeToggle');
 const htmlEl = document.documentElement;
 
-const updateThemeIcon = (theme) => {
-    themeToggleBtn.innerHTML = theme === 'dark' ? '<i data-lucide="sun"></i>' : '<i data-lucide="moon"></i>';
-    lucide.createIcons();
+// --- OS/Device Theme Synchronization ---
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+const applyDeviceTheme = (e) => {
+    const isDark = e.matches;
+    htmlEl.setAttribute('data-theme', isDark ? 'dark' : 'light');
 };
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    htmlEl.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
-} else {
-    updateThemeIcon('dark');
-}
+// Apply immediately on load
+applyDeviceTheme(darkModeMediaQuery);
 
-themeToggleBtn.addEventListener('click', () => {
-    const currentTheme = htmlEl.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    htmlEl.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-});
+// Listen for live changes in device settings
+darkModeMediaQuery.addEventListener('change', applyDeviceTheme);
 
 const dictionary = {
     de: {
