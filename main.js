@@ -91,7 +91,7 @@ const dictionary = {
         
         rev_title: "Kundenstimmen",
         footer_motto: "Authentische Pizza, saftige Döner und köstliche Hot Dogs, frisch zubereitet im Herzen von Bamberg.", footer_contact: "Kontakt & Info",
-        footer_payment: "Bar oder Karte", footer_outdoor: "Sitzplätze im Freien verfügbar • Keine Reservierung",
+        footer_payment: "Bar, Karte, Apple/Google Pay", footer_outdoor: "Sitzplätze im Freien verfügbar • Keine Reservierung",
         footer_hours_title: "Öffnungszeiten", footer_mo_sa: "Mo - Sa:", footer_su: "So:", map_text: "Mitten im Zentrum",
         nav_maps: "Route & Navigation"
     },
@@ -167,7 +167,7 @@ const dictionary = {
         
         rev_title: "Reviews",
         footer_motto: "Authentic pizza, juicy kebabs and delicious hot dogs, freshly prepared in the heart of Bamberg.", footer_contact: "Contact & Info",
-        footer_payment: "Cash or Card", footer_outdoor: "Outdoor seating available • No reservation required",
+        footer_payment: "Cash, Card, Apple/Google Pay", footer_outdoor: "Outdoor seating available • No reservation required",
         footer_hours_title: "Opening Hours", footer_mo_sa: "Mon - Sat:", footer_su: "Sun:", map_text: "Right in the<br>Center",
         nav_maps: "Route & Navigation"
     }
