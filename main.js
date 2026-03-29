@@ -30,7 +30,17 @@ const dictionary = {
     de: {
         nav_about: "Über uns", nav_menu: "Speisekarte", nav_why: "Warum wir", nav_reviews: "Bewertungen", nav_contact: "Kontakt", nav_order: "Bestellen",
         hero_title: "Frisch. Lecker. Schnell.", hero_subtitle: "Die beste Pizza und Döner in Bamberg, seit 1988.", hero_order: "Jetzt Bestellen", hero_menu: "Speisekarte",
-        cat_title: "Unsere Spezialitäten", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Unsere Speisekarte",
+        cat_title: "Unsere Produkte", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Unsere Speisekarte",
+        cat_sub: "Von knuspriger Pizza über saftigen Döner bis zu leckeren Hot Dogs – bei uns ist für jeden Geschmack etwas dabei.",
+        cat_p_desc: "Besondere Pizza auf besonderem Boden – mit Liebe zubereitet und für jeden Geschmack etwas dabei! Probieren Sie unsere einzigartigen Kreationen.",
+        cat_d_desc: "Besonderer Döner in besonderem Brot – mit Liebe zubereitet und für jeden Geschmack etwas dabei! Probieren Sie unsere einzigartigen Kreationen.",
+        cat_h_desc: "Besonderer Hotdog in besonderem Brot – mit Liebe zubereitet und für jeden Geschmack etwas dabei! Probieren Sie unsere einzigartigen Kreationen.",
+        cat_order_btn: "Jetzt online bestellen",
+        
+        steps_title: "So einfach bestellen Sie", steps_sub: "In nur wenigen Schritten zu Ihrem Lieblingsessen – schnell, einfach und bequem",
+        step1_title: "1. Wählen Sie Ihr Essen", step1_desc: "Stöbern Sie durch unsere Speisekarte und wählen Sie Ihre Lieblingsgerichte aus.",
+        step2_title: "2. Bestellen Sie", step2_desc: "Rufen Sie uns an oder bestellen Sie online – schnell und unkompliziert.",
+        step3_title: "3. Genießen Sie!", step3_desc: "Holen Sie Ihr frisch zubereitetes Essen ab oder lassen Sie es sich liefern.",
         
         // Doner Tab
         m_d_sub_1: "Döner Brot & Wraps",
@@ -88,14 +98,25 @@ const dictionary = {
         about_stat_hours: "10:00 - 20:30", about_stat_days: "Mo - Sa", about_stat_location: "Zentrum",
         
         rev_title: "Kundenstimmen",
-        footer_motto: "Frisch, Lecker, Schnell in Bamberg.", footer_contact: "Kontakt & Standort",
+        footer_motto: "Authentische Pizza, saftige Döner und köstliche Hot Dogs, frisch zubereitet im Herzen von Bamberg.", footer_contact: "Kontakt & Info",
+        footer_payment: "Bar oder mit Karte (Apple/Google Pay)", footer_outdoor: "Sitzplätze im Freien verfügbar • Keine Reservierung",
         footer_hours_title: "Öffnungszeiten", footer_mo_sa: "Mo - Sa:", footer_su: "So:", map_text: "Mitten im Zentrum",
         nav_maps: "Route & Navigation"
     },
     en: {
         nav_about: "About Us", nav_menu: "Full Menu", nav_why: "Why Us", nav_reviews: "Reviews", nav_contact: "Contact", nav_order: "Order",
         hero_title: "Fresh. Delicious. Fast.", hero_subtitle: "The best Pizza and Döner in Bamberg, since 1988.", hero_order: "Order Now", hero_menu: "Menu",
-        cat_title: "Our Signatures", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Our Full Menu",
+        cat_title: "Our Products", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Our Full Menu",
+        cat_sub: "From crispy pizza to juicy kebabs to tasty hot dogs - there is something for every taste with us.",
+        cat_p_desc: "Special pizza on a special crust - prepared with love and something for every taste! Try our unique creations.",
+        cat_d_desc: "Special kebab in special bread - prepared with love and something for every taste! Try our unique creations.",
+        cat_h_desc: "Special hot dog in special bread - prepared with love and something for every taste! Try our unique creations.",
+        cat_order_btn: "Order Online Now",
+        
+        steps_title: "How to order", steps_sub: "Your favorite food in just a few steps – fast, easy and convenient",
+        step1_title: "1. Choose Your Food", step1_desc: "Browse through our menu and choose your favorite dishes.",
+        step2_title: "2. Place Order", step2_desc: "Call us or order online – quick and uncomplicated.",
+        step3_title: "3. Enjoy!", step3_desc: "Pick up your freshly prepared food or have it delivered to you.",
         
         // Doner Tab
         m_d_sub_1: "Döner Bread & Wraps",
@@ -153,7 +174,8 @@ const dictionary = {
         about_stat_hours: "10:00 AM - 8:30 PM", about_stat_days: "Mon - Sat", about_stat_location: "Center",
         
         rev_title: "Reviews",
-        footer_motto: "Fresh, Delicious, Fast in Bamberg.", footer_contact: "Contact & Location",
+        footer_motto: "Authentic pizza, juicy kebabs and delicious hot dogs, freshly prepared in the heart of Bamberg.", footer_contact: "Contact & Info",
+        footer_payment: "Cash or Card (Apple/Google Pay)", footer_outdoor: "Outdoor seating available • No reservation required",
         footer_hours_title: "Opening Hours", footer_mo_sa: "Mon - Sat:", footer_su: "Sun:", map_text: "Right in the<br>Center",
         nav_maps: "Route & Navigation"
     }

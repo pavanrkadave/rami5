@@ -55,20 +55,58 @@
     <!-- Featured Categories -->
     <section id="categories" class="section bg-alt">
       <div class="container text-center">
-        <h2 class="section-title fade-in-up" data-i18n="cat_title">Unsere Spezialitäten</h2>
-        <div class="grid cat-grid">
+        <h2 class="section-title fade-in-up" data-i18n="cat_title">Unsere Produkte</h2>
+        <p class="section-sub fade-in-up" data-i18n="cat_sub">Von knuspriger Pizza über saftigen Döner bis zu leckeren Hot Dogs – bei uns ist für jeden Geschmack etwas dabei.</p>
+        <div class="grid cat-grid" style="margin-top: 50px;">
           <div class="card cat-card fade-in-up" style="--delay: 0.1s">
             <div class="card-img-wrapper"><img src="/images/pizza_slice.png" alt="Pizza" class="cat-img"></div>
-            <div class="card-content"><h3 data-i18n="cat_pizza">Pizza</h3></div>
+            <div class="card-content">
+               <h3 data-i18n="cat_pizza">Pizza</h3>
+               <p data-i18n="cat_p_desc" style="font-size: 0.95rem; margin-top: 10px; margin-bottom: 20px; color: var(--color-text-mutated);">Besondere Pizza auf besonderem Boden – mit Liebe zubereitet und für jeden Geschmack etwas dabei!</p>
+               <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;"><i data-lucide="shopping-cart"></i> <span data-i18n="cat_order_btn">Jetzt online bestellen</span></a>
+            </div>
           </div>
           <div class="card cat-card fade-in-up" style="--delay: 0.2s">
              <div class="card-img-wrapper"><img src="/images/doner_kebab.png" alt="Döner" class="cat-img"></div>
-            <div class="card-content"><h3 data-i18n="cat_doner">Döner & Kebab</h3></div>
+            <div class="card-content">
+               <h3 data-i18n="cat_doner">Döner & Kebab</h3>
+               <p data-i18n="cat_d_desc" style="font-size: 0.95rem; margin-top: 10px; margin-bottom: 20px; color: var(--color-text-mutated);">Besonderer Döner in besonderem Brot – mit Liebe zubereitet und für jeden Geschmack etwas dabei!</p>
+               <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;"><i data-lucide="shopping-cart"></i> <span data-i18n="cat_order_btn">Jetzt online bestellen</span></a>
+            </div>
           </div>
           <div class="card cat-card fade-in-up" style="--delay: 0.3s">
             <div class="card-img-wrapper"><img src="/images/hotdog.png" alt="Hotdogs" class="cat-img"></div>
-            <div class="card-content"><h3 data-i18n="cat_hotdog">Hotdogs</h3></div>
+            <div class="card-content">
+               <h3 data-i18n="cat_hotdog">Hotdogs</h3>
+               <p data-i18n="cat_h_desc" style="font-size: 0.95rem; margin-top: 10px; margin-bottom: 20px; color: var(--color-text-mutated);">Besonderer Hotdog in besonderem Brot – mit Liebe zubereitet und für jeden Geschmack etwas dabei!</p>
+               <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;"><i data-lucide="shopping-cart"></i> <span data-i18n="cat_order_btn">Jetzt online bestellen</span></a>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to order -->
+    <section id="how-to-order" class="section">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up" data-i18n="steps_title">So einfach bestellen Sie</h2>
+        <p class="section-sub fade-in-up" data-i18n="steps_sub">In nur wenigen Schritten zu Ihrem Lieblingsessen – schnell, einfach und bequem</p>
+        <div class="steps-grid fade-in-up">
+           <div class="step-card">
+              <div class="step-number">1</div>
+              <h3 data-i18n="step1_title" style="margin-bottom: 10px;">Wählen Sie Ihr Essen</h3>
+              <p data-i18n="step1_desc" style="color: var(--color-text-mutated);">Stöbern Sie durch unsere Speisekarte und wählen Sie Ihre Lieblingsgerichte aus.</p>
+           </div>
+           <div class="step-card">
+              <div class="step-number">2</div>
+              <h3 data-i18n="step2_title" style="margin-bottom: 10px;">Bestellen Sie</h3>
+              <p data-i18n="step2_desc" style="color: var(--color-text-mutated);">Rufen Sie uns an oder bestellen Sie online – schnell und unkompliziert.</p>
+           </div>
+           <div class="step-card">
+              <div class="step-number">3</div>
+              <h3 data-i18n="step3_title" style="margin-bottom: 10px;">Genießen Sie!</h3>
+              <p data-i18n="step3_desc" style="color: var(--color-text-mutated);">Holen Sie Ihr frisch zubereitetes Essen ab oder lassen Sie es sich liefern.</p>
+           </div>
         </div>
       </div>
     </section>
@@ -252,14 +290,23 @@
     <!-- Footer -->
     <footer id="contact" class="footer">
       <div class="container footer-grid fade-in-up">
-        <div class="footer-col">
-          <h3 class="logo">Rami <span class="accent">5</span></h3>
-          <p class="footer-moto" data-i18n="footer_motto">Frisch, Lecker, Schnell.</p><br>
-          <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Wolt Bestellung</a>
+        <div class="footer-col" style="flex: 2;">
+          <h3 class="logo" style="margin-bottom: 10px;">Rami <span class="accent">5</span></h3>
+          <p class="footer-moto" data-i18n="footer_motto" style="margin-bottom: 20px;">Authentische Pizza, saftige Döner und köstliche Hot Dogs, frisch zubereitet im Herzen von Bamberg.</p>
+          <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+             <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="icon-btn" style="background:var(--color-bg-alt);"><i data-lucide="facebook"></i></a>
+             <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="icon-btn" style="background:var(--color-bg-alt);"><i data-lucide="instagram"></i></a>
+          </div>
+          <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order"><i data-lucide="shopping-bag" style="width: 18px; margin-right:5px"></i> Wolt Bestellung</a>
         </div>
         <div class="footer-col">
-          <h4 data-i18n="footer_contact">Kontakt & Standort</h4>
-          <ul><li><i data-lucide="map-pin"></i> Franz-Ludwig-Straße 5<br>96047 Bamberg</li><li><i data-lucide="phone"></i> 0951 18329337</li></ul>
+          <h4 data-i18n="footer_contact">Kontakt & Info</h4>
+          <ul>
+             <li><i data-lucide="map-pin"></i> Franz-Ludwig-Straße 5<br>96047 Bamberg</li>
+             <li><i data-lucide="phone"></i> 0951 18329337</li>
+             <li><i data-lucide="credit-card"></i> <span data-i18n="footer_payment">Bar, Karte, Apple/Google Pay</span></li>
+             <li><i data-lucide="sun"></i> <span data-i18n="footer_outdoor">Sitzplätze im Freien</span></li>
+          </ul>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_hours_title">Öffnungszeiten</h4>
@@ -271,7 +318,7 @@
         </div>
       </div>
       <div class="footer-bottom text-center">
-        <p>&copy; <span id="year"></span> Rami 5 Pizzahaus.</p>
+        <p>&copy; <span id="year"></span> Rami 5 Pizzahaus. Alle Rechte vorbehalten.</p>
       </div>
     </footer>
 
