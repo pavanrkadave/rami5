@@ -192,7 +192,7 @@ const updateLanguage = (lang) => {
     });
     document.documentElement.lang = lang;
     currentLang = lang;
-    langToggleBtn.textContent = lang === 'de' ? 'EN' : 'DE';
+    langToggleBtn.innerHTML = lang === 'de' ? '<span style="font-size:1.1rem; line-height:1;">🇬🇧</span> EN' : '<span style="font-size:1.1rem; line-height:1;">🇩🇪</span> DE';
 };
 
 langToggleBtn.addEventListener('click', () => {
