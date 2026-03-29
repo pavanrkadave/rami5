@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rami 5 Pizzahaus | Frisch. Lecker. Schnell.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Rami <span class="accent">5</span></a>
+        <div class="nav-links">
+          <a href="#about" data-i18n="nav_about">Über uns</a>
+          <a href="#full-menu" data-i18n="nav_menu">Speisekarte</a>
+          <a href="#why-choose-us" data-i18n="nav_why">Warum wir</a>
+          <a href="#reviews" data-i18n="nav_reviews">Bewertungen</a>
+          <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        </div>
+        <div class="controls">
+          <button id="langToggle" class="icon-btn" aria-label="Toggle Language">DE</button>
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme"><i data-lucide="sun"></i></button>
+          <a href="tel:095118329337" class="btn btn-outline btn-sm nav-call-btn" title="Anrufen"><i data-lucide="phone"></i><span class="nav-call-text" data-i18n="nav_call">Anrufen</span></a>
+          <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Bestellen</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in-up">
+        <h1 data-i18n="hero_title">Frisch. Lecker. Schnell.</h1>
+        <p data-i18n="hero_subtitle">Die beste Pizza und Döner in Bamberg, seit 1988.</p>
+        <div class="hero-actions">
+          <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-lg">
+            <i data-lucide="shopping-bag"></i> <span data-i18n="hero_order">Jetzt Bestellen</span>
+          </a>
+          <a href="#full-menu" class="btn btn-outline btn-lg" data-i18n="hero_menu">Speisekarte</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section id="categories" class="section bg-alt">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up" data-i18n="cat_title">Unsere Spezialitäten</h2>
+        <div class="grid cat-grid">
+          <div class="card cat-card fade-in-up" style="--delay: 0.1s">
+            <div class="card-img-wrapper"><img src="/images/pizza_slice.png" alt="Pizza" class="cat-img"></div>
+            <div class="card-content"><h3 data-i18n="cat_pizza">Pizza</h3></div>
+          </div>
+          <div class="card cat-card fade-in-up" style="--delay: 0.2s">
+             <div class="card-img-wrapper"><img src="/images/doner_kebab.png" alt="Döner" class="cat-img"></div>
+            <div class="card-content"><h3 data-i18n="cat_doner">Döner & Kebab</h3></div>
+          </div>
+          <div class="card cat-card fade-in-up" style="--delay: 0.3s">
+            <div class="card-img-wrapper"><img src="/images/hotdog.png" alt="Hotdogs" class="cat-img"></div>
+            <div class="card-content"><h3 data-i18n="cat_hotdog">Hotdogs</h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section id="full-menu" class="section">
+      <div class="container">
+        <div class="text-center fade-in-up">
+           <h2 class="section-title" data-i18n="full_menu_title">Unsere Speisekarte</h2>
+           <div class="menu-tabs">
+             <button class="btn tab-btn active" data-target="m-doner" data-i18n="cat_doner">Döner & Kebab</button>
+             <button class="btn tab-btn" data-target="m-pizza" data-i18n="cat_pizza">Pizza</button>
+             <button class="btn tab-btn" data-target="m-hotdog" data-i18n="cat_hotdog">Hotdogs</button>
+           </div>
+        </div>
+
+        <div class="menu-content-area fade-in-up">
+          <!-- DÖNER TAB -->
+          <div id="m-doner" class="tab-content active">
+             <!-- Döner Wraps -->
+             <h3 class="menu-sub-title" data-i18n="m_d_sub_1">Döner Brot & Wraps</h3>
+             <div class="menu-grid">
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="md_1">Döner Kebab (Geflügel)</h4><span class="mi-price" data-i18n="mp_d_1">6,80 € / Menü: 11,80 €</span></div><p data-i18n="mi_d_1">Eisbergsalat, Krautsalat, Tomaten, Zwiebeln.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="md_2">Döner Kebab (Kalb/Rind)</h4><span class="mi-price" data-i18n="mp_d_2">6,50 € / Menü: 11,50 €</span></div><p data-i18n="mi_d_2">Eisbergsalat, Krautsalat, Tomaten, Zwiebeln.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="md_3">Dürüm Döner</h4><span class="mi-price" data-i18n="mp_d_3">7,50 € / Menü: 12,50 €</span></div><p data-i18n="mi_d_3">Eingewickelt mit Eisbergsalat, Krautsalat, Tomaten, Zwiebeln.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="md_4">Döner Sandwich (Neu!)</h4><span class="mi-price" data-i18n="mp_d_4">7,50 € / Menü: 12,50 €</span></div><p data-i18n="mi_d_4">Weiches Brot, ungetoastet.</p></div>
+             </div>
+             <!-- Vegetarisch Wraps -->
+             <h3 class="menu-sub-title" style="margin-top: 40px;" data-i18n="m_d_sub_2">Vegetarisch Brot & Wraps</h3>
+             <div class="menu-grid">
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mv_1">Falafel</h4><span class="mi-price" data-i18n="mp_v_1">6,50 € / Menü: 11,50 €</span></div><p data-i18n="mi_v_1">Eisbergsalat, Krautsalat, Tomaten, eingelegte Gurken.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mv_2">Döner Vegetarisch</h4><span class="mi-price" data-i18n="mp_v_2">6,80 € / Menü: 11,80 €</span></div><p data-i18n="mi_v_2">Zwiebeln, Käse, Aubergine und Paprika.</p></div>
+             </div>
+             <!-- Tellergerichte -->
+             <h3 class="menu-sub-title" style="margin-top: 40px;" data-i18n="m_d_sub_3">Tellergerichte & Boxen</h3>
+             <div class="menu-grid">
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mt_1">Döner Teller</h4><span class="mi-price" data-i18n="mp_t_1">9,00 € / Mit Käse: 10,00 €</span></div><p data-i18n="mi_t_1">Pommes, Salat, Zwiebeln, Tomaten, Paprika, Fladenbrot.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mt_2">Falafel Teller</h4><span class="mi-price" data-i18n="mp_t_2">10,00 € / Mit Käse: 11,00 €</span></div><p data-i18n="mi_t_2">Pommes, Salat, Zwiebeln, Tomaten, Paprika, Fladenbrot.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mt_3">Döner/Falafel Box</h4><span class="mi-price" data-i18n="mp_t_3">6,50 € / Nur Fleisch: 7,50 €</span></div><p data-i18n="mi_t_3">Wahlweise mit Salat oder Pommes.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mt_4">Portion Pommes</h4><span class="mi-price" data-i18n="mp_t_4">3,50 €</span></div><p data-i18n="mi_t_4">Wahlweise mit Ketchup oder Mayonnaise.</p></div>
+             </div>
+          </div>
+
+          <!-- PIZZA TAB -->
+          <div id="m-pizza" class="tab-content">
+             <div class="pizza-header-row">
+                 <div class="ph-name" data-i18n="p_hr_1">Pizza Variation</div>
+                 <div class="ph-sizes">
+                     <span data-i18n="p_hr_2">Stück</span>
+                     <span data-i18n="p_hr_3">30 cm</span>
+                     <span data-i18n="p_hr_4">36 cm</span>
+                 </div>
+             </div>
+             <div class="menu-grid">
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_1">Döner</h4><p data-i18n="pzi_1">Dönerfleisch, Zwiebeln, Tomaten, Soße, Käse.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">8,50 €</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_2">Rami (Bestseller)</h4><p data-i18n="pzi_2">Aubergine, Paprika, Knoblauchsoße, Kräutersoße.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">8,50 €</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+                <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_3">Margherita</h4><p data-i18n="pzi_3">Tomatensoße und Käse.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">2,70 €</span><span data-label="30 cm">6,50 €</span><span data-label="36 cm">9,50 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_4">Spezial</h4><p data-i18n="pzi_4">Geflügelsalami, Putenbrust, Champignons, Peperoni.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,20 €</span><span data-label="30 cm">-</span><span data-label="36 cm">11,50 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_5">Salami</h4><p data-i18n="pzi_5">Geflügelsalami.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,20 €</span><span data-label="30 cm">7,50 €</span><span data-label="36 cm">11,50 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_6">Tonno</h4><p data-i18n="pzi_6">Thunfisch, Zwiebeln.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">8,50 €</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_7">Hawaii</h4><p data-i18n="pzi_7">Ananas, Putenbrust, holländische Soße.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">-</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_8">Tomate / Mozzarella</h4><p data-i18n="pzi_8">Frische Tomaten, Rucola, Mozzarella.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">8,50 €</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_9">Tomate Feta</h4><p data-i18n="pzi_9">Feta Käse, Tomaten, Rucola, Balsamico.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">8,50 €</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+               <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_10">Funghi</h4><p data-i18n="pzi_10">Champignons.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,70 €</span><span data-label="30 cm">-</span><span data-label="36 cm">13,00 €</span></div>
+               </div>
+                <div class="menu-item pizza-item">
+                  <div class="pizza-left"><h4 data-i18n="pz_11">Vegetarisch</h4><p data-i18n="pzi_11">Champignons, Peperoni, Paprika, Oliven.</p></div>
+                  <div class="pizza-prices"><span data-label="Stück">3,20 €</span><span data-label="30 cm">-</span><span data-label="36 cm">11,50 €</span></div>
+               </div>
+             </div>
+          </div>
+
+          <!-- HOTDOGS TAB -->
+          <div id="m-hotdog" class="tab-content">
+            <h3 class="menu-sub-title" data-i18n="m_hd_sub_1">Top Picks</h3>
+            <div class="menu-grid" style="margin-bottom: 30px;">
+              <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_1">Rami Royal (Bestseller)</h4><span class="mi-price" data-i18n="mph_1">6,50 €</span></div><p data-i18n="mi_h_1">Cocktailsoße, Dönerfleisch, Zwiebeln, Tomaten, Käse.</p></div>
+              <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_2">Memo</h4><span class="mi-price" data-i18n="mph_2">6,00 €</span></div><p data-i18n="mi_h_2">Spezialsoße, doppelt Wurst, Käse, Zwiebeln, Petersilie.</p></div>
+              <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_3">Rami 5</h4><span class="mi-price" data-i18n="mph_3">5,50 €</span></div><p data-i18n="mi_h_3">Spezialsoße, Käse, Röstzwiebeln, Tomaten, eingelegte Gurken.</p></div>
+              <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_4">Rami Classic</h4><span class="mi-price" data-i18n="mph_4">5,00 €</span></div><p data-i18n="mi_h_4">Ketchup, Senf, Käse, Röstzwiebeln.</p></div>
+            </div>
+
+            <h3 class="menu-sub-title" data-i18n="m_hd_sub_2">Klassiker & Specials</h3>
+            <div class="menu-grid">
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_5">Ohne Alles</h4><span class="mi-price" data-i18n="mph_5">2,70 €</span></div><p data-i18n="mi_h_5">Brot und Würstchen pur.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_6">Ketchup / Mayo / Senf</h4><span class="mi-price" data-i18n="mph_6">3,20 €</span></div><p data-i18n="mi_h_6">Wahlweise eine klassische Soße.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_7">Rot / Weiss</h4><span class="mi-price" data-i18n="mph_7">3,50 €</span></div><p data-i18n="mi_h_7">Ketchup & Mayonnaise.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_8">Spezial / Mexico</h4><span class="mi-price" data-i18n="mph_8">4,00 € / Mit Käse: 4,50 €</span></div><p data-i18n="mi_h_8">Spezialsoße oder mexikanisch scharf.</p></div>
+               <div class="menu-item"><div class="mi-header"><h4 data-i18n="mh_9">Vegetarisch</h4><span class="mi-price" data-i18n="mph_9">4,50 €</span></div><p data-i18n="mi_h_9">Spezialsoße, Käse, Röstzwiebeln, Tomaten, Gurken.</p></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Original Print Menu Gallery -->
+        <div class="menu-images-gallery text-center fade-in-up" style="margin-top: 80px;">
+           <h3 class="menu-sub-title" data-i18n="m_images_title" style="margin-bottom: 30px;">Original Speisekarte</h3>
+           <p style="color:var(--color-text-mutated); margin-bottom: 20px;" data-i18n="m_images_sub">Zum Vergrößern auf ein Bild klicken.</p>
+           <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+              <img src="/images/IMG_4905.PNG" alt="Menu Page 1" class="gallery-img">
+              <img src="/images/IMG_4906.PNG" alt="Menu Page 2" class="gallery-img">
+              <img src="/images/IMG_4907.PNG" alt="Menu Page 3" class="gallery-img">
+           </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="section bg-alt">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up" data-i18n="why_title">Warum wir</h2>
+        <p class="section-sub fade-in-up" data-i18n="why_sub">Die Gründe, warum unsere Gäste uns seit Jahrzehnten treu bleiben</p>
+        <div class="grid why-grid fade-in-up" style="margin-top:40px;">
+          <div class="card why-card"><i data-lucide="heart" class="why-icon"></i><h3 data-i18n="why_c1_title">Mit Herz und Seele</h3><p data-i18n="why_c1_p">Jedes Gericht wird mit derselben Liebe zubereitet wie für die eigene Familie.</p></div>
+          <div class="card why-card"><i data-lucide="users" class="why-icon"></i><h3 data-i18n="why_c2_title">Familiengeführt</h3><p data-i18n="why_c2_p">Viele unserer Gäste sind seit Jahrzehnten treue Stammkunden.</p></div>
+          <div class="card why-card"><i data-lucide="smile" class="why-icon"></i><h3 data-i18n="why_c3_title">Persönlicher Service</h3><p data-i18n="why_c3_p">Bei uns werden Sie oft mit Namen begrüßt – wir kennen unsere Gäste.</p></div>
+        </div>
+        <div class="stats-banner fade-in-up">
+           <div class="stat-item"><span class="stat-num">35+</span><span data-i18n="stat_1">Jahre Erfahrung</span></div>
+           <div class="stat-item"><span class="stat-num">5.0</span><span data-i18n="stat_2">Sterne Bewertung</span></div>
+           <div class="stat-item"><span class="stat-num">100%</span><span data-i18n="stat_3">Frische Zutaten</span></div>
+           <div class="stat-item"><span class="stat-num">∞</span><span data-i18n="stat_4">Zufriedene Gäste</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container about-layout fade-in-up">
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about_title">Tradition Seit 1988</h2>
+          <p data-i18n="about_p1">Wir sind ein Familienbetrieb, der sich 1988 in Bamberg verliebt hat.</p>
+          <p data-i18n="about_p2">Wir verwenden nur die frischesten Zutaten und bereiten unsere Gerichte mit Liebe zu.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box"><i data-lucide="clock" class="stat-icon"></i><h4 data-i18n="about_stat_hours">10:00 - 20:30</h4><p data-i18n="about_stat_days">Mo - Sa</p></div>
+          <div class="stat-box"><i data-lucide="map-pin" class="stat-icon"></i><h4>Bamberg</h4><p data-i18n="about_stat_location">Zentrum</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Marquee -->
+    <section id="reviews" class="section bg-alt" style="overflow: hidden;">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up" data-i18n="rev_title">Kundenstimmen</h2>
+        <div class="marquee-container fade-in-up">
+          <div class="marquee" id="review-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid fade-in-up">
+        <div class="footer-col">
+          <h3 class="logo">Rami <span class="accent">5</span></h3>
+          <p class="footer-moto" data-i18n="footer_motto">Frisch, Lecker, Schnell.</p><br>
+          <a href="https://wolt.com/de/deu/bamberg/restaurant/rami-5-bamberg" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Wolt Bestellung</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact">Kontakt & Standort</h4>
+          <ul><li><i data-lucide="map-pin"></i> Franz-Ludwig-Straße 5<br>96047 Bamberg</li><li><i data-lucide="phone"></i> 0951 18329337</li></ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_hours_title">Öffnungszeiten</h4>
+          <ul><li><span data-i18n="footer_mo_sa">Mo - Sa:</span> 10:00 - 20:30</li><li><span data-i18n="footer_su">So:</span> Geschlossen</li></ul>
+        </div>
+        <div class="footer-col" style="min-height:250px; background:var(--color-bg); border-radius:12px; overflow:hidden; position:relative;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.9926838304917!2d10.893026076771337!3d49.898950671490214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a22312b930dadd%3A0xe2ce6a8beccb10a2!2sFranz-Ludwig-Stra%C3%9Fe%205%2C%2096047%20Bamberg!5e0!3m2!1sde!2sde!4v1698748301824!5m2!1sde!2sde" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://maps.google.com/?q=Franz-Ludwig-Straße+5,+96047+Bamberg,+Germany" target="_blank" class="btn btn-primary" style="display:block; text-align:center; border-radius:0; padding:15px; font-weight:bold; width: 100%;" data-i18n="nav_maps"><i data-lucide="navigation" style="width: 18px; margin-right:5px"></i> Route & Navigation</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p>&copy; <span id="year"></span> Rami 5 Pizzahaus.</p>
+      </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div style="text-align: center; margin-top: 40px; padding-bottom: 40px;">
+        <a href="#" id="downloadBtn" download class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(0,0,0,0.5);"><i data-lucide="download"></i> Download</a>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
