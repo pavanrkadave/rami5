@@ -10,6 +10,9 @@
   --color-card: #ffffff;
   --color-nav: rgba(255, 255, 255, 0.85);
 
+  --hero-bg-image: url('/images/pizza_hero_light.png');
+  --footer-icon-bg: #dde2e5;
+
   --font-family: 'Outfit', sans-serif;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --border-radius: 12px;
@@ -23,6 +26,9 @@
   --color-text: #ffffff;
   --color-text-mutated: #b0bec5;
   --color-nav: rgba(18, 18, 18, 0.85);
+
+  --hero-bg-image: url('/images/pizza_hero.png');
+  --footer-icon-bg: #2a2a2a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -89,8 +95,9 @@ h1, h2, h3, h4 { font-weight: 800; }
 /* Hero */
 .hero {
   height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
-  text-align: center; background: url('/images/pizza_hero.png') center/cover no-repeat;
+  text-align: center; background: var(--hero-bg-image) center/cover no-repeat;
   color: #fff; padding-top: var(--navbar-height);
+  transition: background 0.3s ease;
 }
 .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); z-index: 1; }
 .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 20px; }
@@ -197,7 +204,10 @@ h1, h2, h3, h4 { font-weight: 800; }
 .footer-col ul li i { margin-top:4px; }
 .footer-moto { color: #ccc; margin-top: 10px; font-family: 'Outfit'; font-weight: 300 }
 .footer-col .logo { margin-bottom: 10px; display: block; }
-.footer-bottom { border-top: 1px solid #333; padding-top: 20px; color: #888; font-size: 0.9rem; }
+.footer-bottom { border-top: 1px solid var(--footer-border); padding-top: 20px; color: #888; font-size: 0.9rem; }
+
+.social-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--footer-icon-bg); color: var(--color-text); font-size: 1.2rem; transition: all 0.3s ease; }
+.social-btn:hover { background: var(--color-primary); color: #fff; transform: translateY(-3px); }
 
 /* Utilities */
 .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; transition-delay: var(--delay, 0s); }
