@@ -20,7 +20,7 @@ darkModeMediaQuery.addEventListener('change', applyDeviceTheme);
 
 const dictionary = {
     de: {
-        nav_about: "Über uns", nav_menu: "Speisekarte", nav_why: "Warum wir", nav_reviews: "Bewertungen", nav_contact: "Kontakt", nav_order: "Bestellen",
+        nav_about: "Über uns", nav_menu: "Speisekarte", nav_why: "Warum wir", nav_reviews: "Bewertungen", nav_contact: "Kontakt", nav_order: "Bestellen", nav_call: "Anrufen",
         hero_title: "Frisch. Lecker. Schnell.", hero_subtitle: "Die beste Pizza und Döner in Bamberg, seit 1988.", hero_order: "Jetzt Bestellen", hero_menu: "Speisekarte",
         cat_title: "Unsere Produkte", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Unsere Speisekarte",
         cat_sub: "Von knuspriger Pizza über saftigen Döner bis zu leckeren Hot Dogs – bei uns ist für jeden Geschmack etwas dabei.",
@@ -77,7 +77,7 @@ const dictionary = {
         mh_7: "Rot / Weiss", mph_7: "3,50 €", mi_h_7: "Ketchup & Mayonnaise.",
         mh_8: "Spezial / Mexico", mph_8: "4,00 € / Mit Käse: 4,50 €", mi_h_8: "Spezialsoße oder mexikanisch scharf.",
         mh_9: "Vegetarisch", mph_9: "4,50 €", mi_h_9: "Spezialsoße, Käse, Röstzwiebeln, Tomaten, Gurken.",
-        m_images_title: "Original Speisekarte (Galerie)",
+        m_images_title: "Original Speisekarte (Galerie)", m_images_sub: "Zum Vergrößern und Herunterladen auf ein Bild klicken",
 
         why_title: "Warum wir", why_sub: "Die Gründe, warum unsere Gäste uns seit Jahrzehnten treu bleiben",
         why_c1_title: "Mit Herz und Seele", why_c1_p: "Jedes Gericht wird mit derselben Liebe zubereitet wie für die eigene Familie.",
@@ -96,7 +96,7 @@ const dictionary = {
         nav_maps: "Route & Navigation"
     },
     en: {
-        nav_about: "About Us", nav_menu: "Full Menu", nav_why: "Why Us", nav_reviews: "Reviews", nav_contact: "Contact", nav_order: "Order",
+        nav_about: "About Us", nav_menu: "Full Menu", nav_why: "Why Us", nav_reviews: "Reviews", nav_contact: "Contact", nav_order: "Order", nav_call: "Call",
         hero_title: "Fresh. Delicious. Fast.", hero_subtitle: "The best Pizza and Döner in Bamberg, since 1988.", hero_order: "Order Now", hero_menu: "Menu",
         cat_title: "Our Products", cat_pizza: "Pizza", cat_doner: "Döner & Kebab", cat_hotdog: "Hotdogs", full_menu_title: "Our Full Menu",
         cat_sub: "From crispy pizza to juicy kebabs to tasty hot dogs - there is something for every taste with us.",
@@ -153,7 +153,7 @@ const dictionary = {
         mh_7: "Red / White", mph_7: "3.50 €", mi_h_7: "Ketchup & Mayonnaise.",
         mh_8: "Special / Mexico", mph_8: "4.00 € / w/ Cheese: 4.50 €", mi_h_8: "Special sauce or spicy mexican.",
         mh_9: "Vegetarian", mph_9: "4.50 €", mi_h_9: "Special sauce, cheese, fried onions, tomatoes, pickles.",
-        m_images_title: "Original Printed Menu (Gallery)",
+        m_images_title: "Original Printed Menu (Gallery)", m_images_sub: "Click on an image to enlarge and download",
 
         why_title: "Why Choose Us", why_sub: "The reasons why our guests have remained loyal to us for decades",
         why_c1_title: "With Heart and Soul", why_c1_p: "Every dish is prepared with the same love as for our own family.",
